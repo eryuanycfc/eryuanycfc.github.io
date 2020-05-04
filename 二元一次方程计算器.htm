@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0042)http://www.99cankao.com/algebra/twovar.php -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>二元一次方程计算器</title>
+<meta name="keywords" content="二元一次方程组，二元一次方程的解法，二元一次方程计算器，怎么解二元一次方程，二元一次方程公式，二元一次方程练习题，二元一次方程应用题，二元一次方程组教案，一元一次方程，二元一次方程的根">
+<meta name="description" content="方程计算器，一元二次方程，万能计算器，二元一次方程计算题，计算器在线计算分数，二元一次方程组计算器，在线解方程计算器，二元一次方程的解法，二元一次方程组，多元一次方程计算器">
+<link type="text/css" rel="stylesheet" href="./二元一次方程计算器_files/mpublic_v2.css">
+<link type="text/css" rel="stylesheet" href="./二元一次方程计算器_files/base.css">
+<link type="text/css" rel="stylesheet" href="./二元一次方程计算器_files/number.css">
+<script src="./二元一次方程计算器_files/hm.js.下载"></script><script language="javascript">
+function csclear()
+{
+     document.cs.x.value = '';
+     document.cs.y.value = '';
+     document.cs.a1.value = '';
+     document.cs.b1.value = '';
+     document.cs.c1.value = '';
+     document.cs.a2.value = '';
+     document.cs.b2.value = '';
+     document.cs.c2.value = '';
+     document.cs.a1.focus();
+}
+
+function isNum(args)
+{
+	args = args.toString();
+
+	if (args.length == 0)
+	return false;
+
+	for (var i = 0;  i<args.length;  i++)
+	{
+		if ((args.substring(i,i+1) < "0" || args.substring(i, i+1) > "9") && args.substring(i, i+1) != "."&& args.substring(i, i+1) != "-")
+		{
+			return false;
+		}
+	}
+
+	return true;
+}
+function cscheck(i)
+{
+     var a1 = document.cs.a1.value;
+     var b1 = document.cs.b1.value;
+     var c1 = document.cs.c1.value;
+     var a2 = document.cs.a2.value;
+     var b2 = document.cs.b2.value;
+     var c2 = document.cs.c2.value;
+	//alert(c);
+ 	if (i == "1" && !isNum(a1))
+	{
+		  a1 = a1.substring(0,a1.length-1);
+		  document.cs.a1.value = a1;
+		  return;	   
+	}
+ 	if (i == "2" && !isNum(b1))
+	{
+		  b1 = b1.substring(0,b1.length-1);
+		  document.cs.b1.value = b1;
+		  return;	   
+	}
+ 	if (i == "3" && !isNum(c1))
+	{
+		  c1 = c1.substring(0,c1.length-1);
+		  document.cs.c1.value = c1;
+		  return;	   
+	}
+ 	if (i == "4" && !isNum(a2))
+	{
+		  a2 = a2.substring(0,a2.length-1);
+		  document.cs.a2.value = a2;
+		  return;	   
+	}
+ 	if (i == "5" && !isNum(b2))
+	{
+		  b2 = b2.substring(0,b2.length-1);
+		  document.cs.b2.value = b2;
+		  return;	   
+	}
+ 	if (i == "6" && !isNum(c2))
+	{
+		  c2 = c2.substring(0,c2.length-1);
+		  document.cs.c2.value = c2;
+		  return;	   
+	}
+}
+function calcs()
+{
+     var a1 = document.cs.a1.value;
+     var b1 = document.cs.b1.value;
+     var c1 = document.cs.c1.value;
+     var a2 = document.cs.a2.value;
+     var b2 = document.cs.b2.value;
+     var c2 = document.cs.c2.value;	
+
+     var x = (c2 * b1 - c1 * b2) / (a2 * b1 - a1 * b2);	
+	 var y = (a1 * c2 - a2 * c1) / (b2 * a1 - a2 * b1);
+	 
+	document.cs.x.value=x;
+	document.cs.y.value=y;
+}
+</script>
+<script src="./二元一次方程计算器_files/share.js.下载"></script><link rel="stylesheet" href="./二元一次方程计算器_files/share_style0_32.css"></head>
+<body>
+<script src="./二元一次方程计算器_files/_con"></script>
+
+<div class="wrapper">
+
+<div class="main">
+
+<div style="margin-top: 10px">
+<script async="" src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1066447241658620" data-ad-slot="2893352433" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div class="cont">
+<div class="col_left">
+<div class="fn_part fn_sfz mod_box_t1">
+<div class="hd">
+<h2>二元一次方程计算器</h2>
+</div>
+<div class="bd">
+<div class="mod_box_t3 fn_box">
+<div class="box_con">
+<div class="mathmod_form">
+<form name="cs">
+<table>
+<tbody>
+<tr>
+<td align="center">
+<input type="text" onkeyup="cscheck(1)" size="6" name="a1">
+X&nbsp;+&nbsp;
+<input type="text" onkeyup="cscheck(2)" size="6" name="b1">
+Y&nbsp;=&nbsp;
+<input type="text" onkeyup="cscheck(3)" size="6" name="c1">
+</td>
+</tr>
+<tr>
+<td align="center">
+<input type="text" onkeyup="cscheck(4)" size="6" name="a2">
+X&nbsp;+&nbsp;
+<input type="text" onkeyup="cscheck(5)" size="6" name="b2">
+Y&nbsp;=&nbsp;
+<input type="text" onkeyup="cscheck(6)" size="6" name="c2">
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td colspan="2"></td>
+<td align="center">
+<input onclick="calcs()" type="button" name="Calculate" value="计算">
+<input onclick="csclear()" type="reset" name="reset" value="清除">
+</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td align="center">X = <input readonly="" class="forminputcontent" name="x" type="text"> </td>
+<td>
+</td>
+</tr>
+<tr>
+<td> </td>
+<td></td>
+<td align="center">Y = <input readonly="" class="forminputcontent" name="y" type="text"> </td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+</form>
+</div>
+</div>
+<i class="flag_tl_t3"></i>
+<i class="flag_tr_t3"></i>
+<i class="flag_bl_t3"></i>
+<i class="flag_br_t3"></i>
+</div>
+</body></html>
